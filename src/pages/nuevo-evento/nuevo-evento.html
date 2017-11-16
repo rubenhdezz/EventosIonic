@@ -1,0 +1,53 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>
+      Nuevo evento
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content padding id="page2">
+  <form id="nuevoEvento-form1">
+    <ion-item id="nuevoEvento-input1">
+      <ion-label>
+        Evento
+      </ion-label>
+      <ion-input type="text" placeholder=""></ion-input>
+    </ion-item>
+    <ion-item id="nuevoEvento-input3">
+      <ion-label>
+        Fecha
+      </ion-label>
+      <ion-input type="date" placeholder=""></ion-input>
+    </ion-item>
+    <ion-item id="nuevoEvento-input2">
+      <ion-label>
+        Hora
+      </ion-label>
+      <ion-input type="time" placeholder=""></ion-input>
+    </ion-item>
+    <ion-item id="nuevoEvento-input4">
+      <ion-label>
+        Dirección
+      </ion-label>
+      <ion-input type="text" placeholder=""></ion-input>
+    </ion-item>
+
+    <div #map id="map"> </div>
+
+    <a href="comgooglemaps://?daddr=LOCATION" target="_system">Map</a>
+
+    <ion-item id="nuevoEvento-textarea1">
+      <ion-label>
+        Detalles de evento
+      </ion-label>
+      <ion-textarea placeholder=""></ion-textarea>
+    </ion-item>
+  </form>
+  <img src="assets/img/02IDkTkTQx6oNw1H233s_choose.jpeg" style="display:block;width:80%;height:auto;margin-left:auto;margin-right:auto;" />
+  <button id="nuevoEvento-button1" ion-button color="balanced" block style="border-radius:0px 0px 0px 0px;">
+    Aceptar
+  </button>
+</ion-content>
